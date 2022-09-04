@@ -35,9 +35,9 @@
     <!-- top navbar start -->
     <div class="row bg-light p-2">
 
-      <div class="col-6">
-        <nav class="nav-parent d-flex">
-          <img src="./images/logo.svg" alt="logo-image" class="pe-4" height="70px">
+      <div class="col-6 ps-5">
+        <nav class="nav-parent d-flex align-items-center">
+          <img src="./images/Pad-Top-02.svg" alt="logo-image" class="pe-4" height="70px">
           <a href="#">
             <p>Sanabal Al Shamal</p>
             <p>Trading Cont . & Services</p>
@@ -47,11 +47,11 @@
       <div class="col-6 d-flex justify-content-center align-items-center">
         <div class="navigation">
           <ul class="d-flex list-unstyled">
-            <li><a href="#">About Us |</a></li>
-            <li><a href="#">Business |</a></li>
-            <li><a href="#">Our Services |</a></li>
-            <li><a href="#">Gallery |</a></li>
-            <li><a href="#">Contact Us |</a></li>
+            <li><a href="#">About Us </a> <span>|</span> </li>
+            <li><a href="#">Business </a> <span>|</span> </li>
+            <li><a href="#">Our Services </a> <span>|</span> </li>
+            <li><a href="#">Gallery </a> <span>|</span> </li>
+            <li><a href="#">Contact Us </a> <span>|</span> </li>
           </ul>
         </div>
 
@@ -63,16 +63,42 @@
 
     <!-- home header start  -->
     <div class="backHeader text-center">
-      <span class="display-6 text-light">
+      <!-- <span class="display-6 text-light">
         Integrated Real Estate Solutions
-      </span>
+      </span> -->
       <div class="formClass">
+
         <div class="">
-          <input class="form-control" type="text" placeholder="Location" aria-label=".form-control-lg example">
+          <!-- <input class="form-control" type="text" placeholder="Price Range" aria-label=".form-control-lg example"> -->
+          <label for="location-list">
+            <input class="form-control" list="location-cities-list" placeholder="Location" id="location-list">
+            <datalist id="location-cities-list">
+              <option value="Muscat"></option>
+              <option value="San Francisco">
+              <option value="New York">
+              <option value="Seattle">
+              <option value="Los Angeles">
+              <option value="Chicago">
+            </datalist>
         </div>
+
         <div class="">
-          <input class="form-control" type="text" placeholder="Price Range" aria-label=".form-control-lg example">
+          <!-- <input class="form-control" type="text" placeholder="Price Range" aria-label=".form-control-lg example"> -->
+          <label for="ok-input-list">
+            <input class="form-control" list="price-list" placeholder="Price" id="ok-input-list">
+            <datalist id="price-list">
+              <option value="10 - 20"></option>
+              <option value="20 - 30"></option>
+              <option value="30 - 40"></option>
+              <option value="40 - 50"></option>
+              <option value="50 - 60"></option>
+              <option value="60 - 70"></option>
+              <option value="70 - 80"></option>
+              <option value="80 - 90"></option>
+              <option value="90 - 100"></option>
+            </datalist>
         </div>
+
         <div class="">
           <input class="form-control" type="text" placeholder="Bad & Baths" aria-label=".form-control-lg example">
         </div>
@@ -88,16 +114,19 @@
     <div class="container main-container">
       <div class="row">
         <div class="col-6">
-          <div class="d-flex ">
-            <div class="images-gallary">
-              <img src="./images/gallary-3.jpg" class="img-thumbnail" alt="gallary-1">
-              <img src="./images/gallary-3.jpg" class="img-thumbnail" alt="gallary-2">
+          <div class="row g-2">
+
+            <div class="col images-gallary">
+              <img src="./images/galle-1.png" class="img-thumbnail mb-2" alt="gallary-img">
+              <img src="./images/galle-2.png" class="img-thumbnail" alt="gallary-img">
             </div>
-            <div class="images-gallary">
-              <img src="./images/gallary-3.jpg" class="img-thumbnail" alt="gallary-3">
-              <img src="./images/gallary-4.jpg" class="img-thumbnail" alt="gallary-4">
+            <!-- <img src="./images/box_center.png" class="box-center-image" alt="box-center-image"> -->
+            <div class="col images-gallary">
+              <img src="./images/galle-3.png" class="img-thumbnail mb-2" alt="gallary-img">
+              <img src="./images/galle-4.png" class="img-thumbnail" alt="gallary-img">
             </div>
           </div>
+
         </div>
 
         <div class="col-6">
@@ -105,36 +134,36 @@
             <p class="display-6 fw-bold heading">
               We Build Everything As <br /> Your <span class="dreamTxt">Dream</span>
             </p>
-
             <p class="paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae iste consequatur inventore!
-              Quibusdam, voluptatem non natus labore vero vitae earum. Illo culpa eaque minima architecto dolore
-              doloribus enim, aliquid inventore odio obcaecat
+              Sanabal Al Shamal was established by Chairman Mubarak AL Mehazaa along with Mr. Mohammad Sarowar Mamur,
+              partner and managing director. The promoters believed in the tremendous potential of the state of Qatar
+              and the opportunities available in the field of transportation and road conveyance.
+              Sanabal Al Shamal of the well diversified density group of companies, having interest in Transportation,
+              swing and Manpower. Located in central Doha, the group is poised for major expansion in the coming years.
+              swing and Manpower. Located in central Doha, the group is poised for major expansion in the coming years.
             </p>
-
             <ul class="list-unstyled aboutList">
               <li>
-                <img src="./images/right-arrow.png" height="25px" alt="arrow-icon" class="pe-2">
+                <img src="./images/arrow-right.svg" height="25px" alt="arrow-icon" class="pe-2">
                 <span> 100% Satisfication Guarantee. </span>
               </li>
               <li>
-                <img src="./images/right-arrow.png" height="25px" alt="arrow-icon" class="pe-2">
+                <img src="./images/arrow-right.svg" height="25px" alt="arrow-icon" class="pe-2">
                 <span> Accurate Testing Processes. </span>
               </li>
               <li>
-                <img src="./images/right-arrow.png" height="25px" alt="arrow-icon" class="pe-2">
+                <img src="./images/arrow-right.svg" height="25px" alt="arrow-icon" class="pe-2">
                 <span> 35+ Years Of Experience. </span>
               </li>
               <li>
-                <img src="./images/right-arrow.png" height="25px" alt="arrow-icon" class="pe-2">
+                <img src="./images/arrow-right.svg" height="25px" alt="arrow-icon" class="pe-2">
                 <span> Strong Building Materials. </span>
               </li>
               <li>
-                <img src="./images/right-arrow.png" height="25px" alt="arrow-icon" class="pe-2">
+                <img src="./images/arrow-right.svg" height="25px" alt="arrow-icon" class="pe-2">
                 <span> Eco-Friendly Build Materials. </span>
               </li>
             </ul>
-
             <button class="exploreBtn">Explore About Us</button>
           </div>
         </div>
@@ -155,19 +184,20 @@
             quo laborum, <br /> accusamus Lorem ipsum dolor sit amet consectetur
           </span>
         </div>
+
         <!-- services boxes start -->
         <div class="row mt-5">
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/instagram.svg" height="50px" alt="box-logo">
+                <img src="./images/Man-Power-Supply-01.png" class="icon-logo" alt="box-logo">
                 <p>Monopoly Supply</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read More</span>
                 </div>
               </div>
             </div>
@@ -176,14 +206,14 @@
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/monitor.svg" height="50px" alt="box-logo">
+                <img src="./images/Real-Estate-01.png" class="icon-logo" alt="box-logo">
                 <p>Real Estate</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read More</span>
                 </div>
               </div>
             </div>
@@ -192,33 +222,35 @@
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/smartphone.svg" height="50px" alt="box-logo">
+                <img src="./images/Project-Support-01.png" class="icon-logo" alt="box-logo">
                 <p>Project Support</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read More</span>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- services boxes start -->
+        </div>
+        <!-- services boxes start -->
 
         <!-- services boxes start -->
         <div class="row mt-4">
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/smartphone.svg" height="50px" alt="box-logo">
+                <img src="./images/General-Contracting-Maintenance-01-01.png" class="icon-logo" alt="box-logo">
                 <p>General Contracting & Maintenance</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read
+                    More</span>
                 </div>
               </div>
             </div>
@@ -227,14 +259,14 @@
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/instagram.svg" height="50px" alt="box-logo">
+                <img src="./images/Structural-Buildings-01.png" class="icon-logo" alt="box-logo">
                 <p>Structural Buildings</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read More</span>
                 </div>
               </div>
             </div>
@@ -243,57 +275,63 @@
           <div class="col-4">
             <div class="box-1">
               <div class="text-center">
-                <img src="./images/monitor.svg" height="50px" alt="box-logo">
+                <img src="./images/Portable-Cabins-01.png" class="icon-logo" alt="box-logo">
                 <p>Portable - Cabin</p>
                 <span>
                   You can dream, create, design, and build the most
                   wonderfull place in the world. But it requires people.
                 </span>
                 <div class="mt-4">
-                  <img src="./images/right-arrow.png" height="20px" alt="arrow-icon"> <span>Read More</span>
+                  <img src="./images/arrow-right-circle.svg" class="arrow-icon" alt="arrow-icon"> <span>Read More</span>
                 </div>
               </div>
             </div>
           </div>
-        </div> <!-- services boxes end -->
+
+
+        </div>
+
+
         <div class="text-center">
           <button class="exploreBtn mt-4 text-center">Explore All Services</button>
         </div>
       </div>
     </div>
+    <!-- services boxes end -->
     <!-- global image container end   -->
 
     <!-- Projects start  -->
+    <div class="projects-container">
+      <div class="container">
+        <div class="text-center">
+          <p class="projects-heading text-center display-5 fw-bolder pb-5">
+            Our Projects</span>
+          </p>
 
-    <div class="container projects-container">
-      <div class="text-center">
-        <p class="projects-heading display-5 fw-bolder">
-          Our Projects</span>
-        </p>
-
-        <div class="row">
-          <div class="col-3">
-            <div class="project-img-box">
-              <img src="./images/projects-1.jpg" alt="project-img">
-              <p>Abu-Dhabi</p>
+          <div class="row">
+            <div class="col-3">
+              <div class="project-img-box">
+                <img src="./images/proj-1.png" alt="project-img">
+                <p>Sinohydro CP1 Project</p>
+              </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="project-img-box">
-              <img src="./images/projects-2.jpg" alt="project-img">
-              <p>Abu-Dhabi</p>
+            <div class="col-3">
+              <div class="project-img-box">
+                <img src="./images/proj-2.png" alt="project-img">
+                <p>Sinohydro Barwa Al Baraha Project</p>
+              </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="project-img-box">
-              <img src="./images/projects-1.jpg" alt="project-img">
-              <p>Abu-Dhabi</p>
+            <div class="col-3">
+              <div class="project-img-box">
+                <img src="./images/proj-3.png" alt="project-img">
+                <p>Badminton court shed building for Green Stadium</p>
+              </div>
             </div>
-          </div>
-          <div class="col-3">
-            <div class="project-img-box">
-              <img src="./images/projects-3.jpg" alt="project-img">
-              <p>Abu-Dhabi</p>
+            <div class="col-3">
+              <div class="project-img-box">
+                <img src="./images/proj-4.png" alt="project-img">
+                <p>HBK Site Office at Rayyan</p>
+              </div>
             </div>
           </div>
         </div>
@@ -301,32 +339,34 @@
     </div>
     <!-- Projects end -->
 
+
     <!-- footer start -->
     <div class="footer">
-      <div class="col-6">
-        <nav class="nav-parent d-flex">
-          <img src="./images/logo.svg" alt="logo-image" class="pe-4" height="70px">
-          <a href="#">
-            <p>Sanabal Al Shamal</p>
-            <p>Trading Cont . & Services</p>
-          </a>
+
+      <div class="row">
+        <div class="col-6 ps-5">
+          <nav class="nav-parent d-flex align-items-center">
+            <img src="./images/Pad-Top-02.svg" alt="logo-image" class="pe-4" height="70px">
+            <a href="#">
+              <p class="text-light">Sanabal Al Shamal</p>
+              <p class="text-light">Trading Cont . & Services</p>
+            </a>
+        </div>
+
+        <div class="col-6 d-flex justify-content-end align-items-center">
+          <img src="./images/whastapp.svg" alt="whatsapplogo" height="50px">
+        </div>
       </div>
+
+
+      <!-- <div class="row">
+        <p class="text-center mt-5 mb-2 text-light">&#169; All Right Reserved techstudio9.com - 2022</p>
+      </div> -->
+
     </div>
     <!-- footer end -->
 
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
   <!-- Option 1: Bootstrap Bundle with Popper -->

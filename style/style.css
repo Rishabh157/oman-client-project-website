@@ -2,9 +2,16 @@
   margin: 0px;
   padding: 0px;
 }
-
+/* 
 body {
-  height: auto;
+  height: 12000px;
+} */
+
+
+.container-fluid {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
 }
 
 .nav-parent a p {
@@ -34,15 +41,13 @@ body {
 /* homeheader  */
 
 .backHeader {
-  background-image: url("../images/home.jpg");
+  background-image: url("../images/header.jpg");
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
-  padding-top: 150px;
+  background-size: contain;
   font-weight: 600;
   font-family: 'Merriweather', serif;
-  background-position-y: -450px;
-  border-radius: 4px;
 }
 
 .formClass {
@@ -50,7 +55,7 @@ body {
   justify-content: space-evenly;
   position: absolute;
   left: 118px;
-  bottom: -74px;
+  bottom: 16px;
   min-height: 55px;
   background-color: white;
   min-width: 79%;
@@ -75,8 +80,7 @@ body {
 /* main-container  */
 
 .main-container {
-  margin-top: 110px;
-  margin-bottom: 110px;
+  margin-bottom: 16px;
   box-shadow: 5px 9px 14px -6px rgb(111 104 106 / 19%);
   padding: 15px;
 }
@@ -85,6 +89,27 @@ body {
   padding-left: 30px;
 }
 
+.img-thumbnail {
+  height: 188px;
+}
+
+.box-center-image {
+  position: relative;
+  top: 120px;
+  height: 81px;
+  width: 18%;
+  /* position: absolute;
+  display: inline;
+  background-color: red;
+  top: 836px;
+  bottom: -258px;
+  left: 316px; */
+}
+
+/* .box-center-image img{
+  height: 84px;
+} */
+
 .main-container-content .heading {
   color: darkslateblue;
   font-family: 'Roboto', sans-serif;
@@ -92,7 +117,7 @@ body {
 }
 
 .dreamTxt {
-  color: #d1d100 !important;
+  color: #ffbc13 !important;
 }
 
 .main-container-content .paragraph {
@@ -101,6 +126,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #581b1b;
+
 }
 
 .aboutList li {
@@ -123,17 +149,20 @@ body {
   background-color: rgb(255, 166, 0);
   transition: all 460ms;
   font-family: 'Roboto', sans-serif;
+  border-radius: 4px;
 }
 
 .exploreBtn:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 /* global image container */
 
-/* .services-container {
-  
-} */
+.services-container {
+  background-image: url("../images/bg-map-1.png");
+  background-size: contain;
+  padding: 80px 0px;
+}
 
 .services-container .services-heading {
   color: rgb(12, 12, 92);
@@ -153,45 +182,62 @@ body {
 
 .box-1 {
   min-height: 291px;
-  background-color: rgb(233 233 233);
+  /* background-color: rgb(153 153 153); */
+  background-image: linear-gradient(to bottom, #414129, #00020C);
   padding: 28px;
   text-align: justify;
   border-radius: 5px;
   min-width: 102%;
   border: 2px solid black;
+  opacity: 0.8;
 }
 
-.box-1 img {
+.box-1 .icon-logo {
+  height: 75px;
+  border-radius: 50%;
+  /* background-color: red; */
+  padding: 5px;
+}
+
+.box-1 .arrow-icon {
   transition: all 490ms;
   cursor: pointer;
   padding-right: 10px;
+  height: 30px;
+  border-radius: 5%;
 }
 
-.box-1 img:hover {
+.box-1 .arrow-icon:hover {
   cursor: pointer;
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
 .box-1 p {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   margin-top: 23px;
-  color: #000;
+  /* color: #000; */
+  color: #fff;
 }
 
 .box-1 span {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  color: #502929;
+  color: #fff;
   padding-bottom: 8px;
   text-align: justify;
+  font-size: 15px;
 }
 
 
 /* Projects  */
 
 .projects-container {
-  margin-top: 145px;
+  padding: 90px 0px 50px 0px;
+  background-image: url("../images/proje-bg.png");
+  background-size: contain;
+  margin-top: 26px;
+  opacity: 1;
 }
 
 .projects-heading {
@@ -200,18 +246,27 @@ body {
 }
 
 .project-img-box img {
-  height: 300px;
+  height: 250px;
   width: 100%;
+  border-radius: 3px;
+}
+
+.project-img-box p {
+  font-size: 24px;
+  line-height: 25px;
+  color: #001e4c;
+  font-weight: 700;
+  font-family: "Poppins";
+  text-align: center;
 }
 
 
 /* footer  */
 
 .footer {
-  margin-top: 100px;
-  background-color: aqua;
-  height: 200px;
-  padding: 50px;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  background-color: #001E4C;
+  height: 144px;
+  padding: 50px 50px 0px 50px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
 }
