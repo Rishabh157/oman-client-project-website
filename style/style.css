@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
 }
+
 /* 
 body {
   height: 12000px;
@@ -105,10 +106,6 @@ body {
   bottom: -258px;
   left: 316px; */
 }
-
-/* .box-center-image img{
-  height: 84px;
-} */
 
 .main-container-content .heading {
   color: darkslateblue;
@@ -270,4 +267,73 @@ body {
   padding: 50px 50px 0px 50px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
+}
+
+.backColor {
+  background-color: #fff;
+}
+
+/******** Gallary Container Page ********/
+
+.gallary-container {
+  /* height: 10000px; */
+  background-color: #F4F5F6;
+  margin-top: 20px;
+}
+
+.gallary-container p {
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+  color: rgb(50, 32, 32);
+  font-size: rgb(0, 0, 0)17px;
+}
+
+
+
+.box-galle {
+  background-color: #fff;
+  height: 414;
+}
+
+.box-galle img {
+  height: 414px;
+  width: 100%;
+  transition: all 240ms;
+}
+
+
+.box-galle img:hover {
+  /* transform: scale(1.1); */
+  transform: translateY(-10px);
+}
+
+
+
+/******  services-container ******/
+
+
+.service-container {
+  /* height: 10000px; */
+  background-color: #F4F5F6;
+  margin-top: 20px;
+}
+
+.withoutbox {
+  height: 20px;
+  opacity: 0.2;
+  width: 100%;
+  /* background-color: red; */
+  border: 5px solid #b5b5b5;
+  border-radius: 6px;
+}
+
+
+.service-heading {
+  font-family: 'Roboto', sans-serif;
+  font-size: 23px;
+  color: gray;
+}
+
+.service-para {
+  font-family: 'Roboto', sans-serif;
 }
