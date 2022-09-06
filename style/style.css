@@ -3,17 +3,32 @@
   padding: 0px;
 }
 
-/* 
-body {
-  height: 12000px;
-} */
-
-
+/***********************************/
+/******   Index Page Style ******/
+/***********************************/
 .container-fluid {
   padding: 0px;
   margin: 0px;
   overflow: hidden;
 }
+
+.whastapp-fixed-img img {
+  position: fixed;
+  right: 0px;
+  top: 287px;
+  opacity: 0.7;
+  height: 36px;
+  transition: all 300ms;
+}
+
+.whastapp-fixed-img img:hover {
+  opacity: 1;
+}
+
+.main-header {
+  background-color: #fff;
+}
+
 
 .nav-parent a p {
   margin-bottom: 0px;
@@ -88,10 +103,11 @@ body {
 
 .main-container-content {
   padding-left: 30px;
+  padding-top: 50px;
 }
 
 .img-thumbnail {
-  height: 188px;
+  height: 224px;
 }
 
 .box-center-image {
@@ -99,31 +115,24 @@ body {
   top: 120px;
   height: 81px;
   width: 18%;
-  /* position: absolute;
-  display: inline;
-  background-color: red;
-  top: 836px;
-  bottom: -258px;
-  left: 316px; */
 }
 
 .main-container-content .heading {
-  color: darkslateblue;
-  font-family: 'Roboto', sans-serif;
-  font-size: 33px;
-}
-
-.dreamTxt {
-  color: #ffbc13 !important;
+  padding-bottom: 20px;
+  font-size: 32px;
+  color: #051f49;
+  font-weight: 800;
+  display: inline;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .main-container-content .paragraph {
-  text-align: justify;
   font-size: 13px;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #581b1b;
-
+  color: #000000;
+  text-align: justify;
+  font-weight: normal;
+  font-family: 'Poppins', sans-serif;
+  margin: 16px 0px;
 }
 
 .aboutList li {
@@ -140,13 +149,11 @@ body {
   padding: 10px 20px;
   outline: none;
   border: 1px solid rgb(255, 166, 0);
-  color: black;
-  font-weight: 500;
-  cursor: pointer;
   background-color: rgb(255, 166, 0);
-  transition: all 460ms;
+  cursor: pointer;
   font-family: 'Roboto', sans-serif;
   border-radius: 4px;
+  transition: all 460ms;
 }
 
 .exploreBtn:hover {
@@ -163,36 +170,23 @@ body {
 
 .services-container .services-heading {
   color: rgb(12, 12, 92);
-  font-family: 'Roboto', sans-serif;
-}
-
-.services-container .services-paragraph {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 600;
-  color: black;
-}
-
-.servicesTxt {
-  color: orange;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 .box-1 {
   min-height: 291px;
-  /* background-color: rgb(153 153 153); */
-  background-image: linear-gradient(to bottom, #414129, #00020C);
+  background-color: #fff;
   padding: 28px;
   text-align: justify;
-  border-radius: 5px;
+  border-radius: 2px;
   min-width: 102%;
-  border: 2px solid black;
-  opacity: 0.8;
+  border: 1px solid black;
+  opacity: 1;
 }
 
 .box-1 .icon-logo {
   height: 75px;
   border-radius: 50%;
-  /* background-color: red; */
   padding: 5px;
 }
 
@@ -213,22 +207,19 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   margin-top: 23px;
-  /* color: #000; */
-  color: #fff;
+  color: #000;
 }
 
 .box-1 span {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
-  color: #fff;
+  color: #000;
   padding-bottom: 8px;
   text-align: justify;
   font-size: 15px;
 }
 
-
 /* Projects  */
-
 .projects-container {
   padding: 90px 0px 50px 0px;
   background-image: url("../images/proje-bg.png");
@@ -249,12 +240,12 @@ body {
 }
 
 .project-img-box p {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 25px;
   color: #001e4c;
   padding-top: 14px;
   font-weight: 700;
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
@@ -273,7 +264,27 @@ body {
   background-color: #fff;
 }
 
-/******** Gallary Container Page ********/
+.social-div {
+  margin-right: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  padding: 21px;
+  height: 20px;
+  width: 0%;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.social-div img {
+  height: 25px;
+}
+
+
+/***********************************/
+/******   Gallary Page Style  ******/
+/***********************************/
 
 .gallary-container {
   /* height: 10000px; */
@@ -308,32 +319,119 @@ body {
 }
 
 
+/***********************************/
+/******   About Us Page Style ******/
+/***********************************/
 
-/******  services-container ******/
-
-
-.service-container {
-  /* height: 10000px; */
-  background-color: #F4F5F6;
-  margin-top: 20px;
-}
-
-.withoutbox {
-  height: 20px;
-  opacity: 0.2;
+.top-vector-team {
+  display: flex;
+  background-image: url("../images/about-vector-1.png");
+  height: 300px;
   width: 100%;
-  /* background-color: red; */
-  border: 5px solid #b5b5b5;
-  border-radius: 6px;
+  background-size: contain;
+  background-position-x: 331px;
+  background-color: #001E4C;
+  /* justify-content: end; */
+  align-items: center;
+}
+
+.top-vector-team img {
+  height: 200px;
+  position: absolute;
+  right: 129px;
+  bottom: 241px;
+}
+
+.about-box img {
+  height: 400px;
+  width: 100%;
+}
+
+.about-box-content p {
+  font-size: 48px;
+  color: #051f49;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about-box-content span {
+  font-size: 12px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-img-box {
+  background-image: url("../images/about-bg.png");
+  width: 100%;
+  background-color: #132544;
+  background-size: contain;
+
+}
+
+.about-boxes-content {
+  padding: 25px;
+  height: 366px;
+  background-color: #fff;
+  border: 1px solid #000;
+  text-align: center;
+  text-align: justify;
+}
+
+.about-boxes-content img {
+  height: 70px;
+  border-radius: 3px;
+}
+
+.about-boxes-content p {
+  text-align: center;
+  font-size: 18px;
+  color: #001e4c;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+}
+
+.about-boxes-content span {
+  font-size: 13px;
+  color: #001e4c;
+  font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
 }
 
 
-.service-heading {
-  font-family: 'Roboto', sans-serif;
-  font-size: 23px;
-  color: gray;
+
+
+/***********************************/
+/******   Services Page Style ******/
+/***********************************/
+
+.top-vector-team p {
+  color: #fff;
+  padding-left: 90px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
 }
 
-.service-para {
-  font-family: 'Roboto', sans-serif;
+.service-box {
+  background-color: rgb(30, 27, 81);
+  height: 250px;
+  width: 85%;
+}
+
+.service-content p {
+  font-size: 32px;
+  color: #051f49;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.service-content span {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+  background-color: #e9e9e9;
 }
