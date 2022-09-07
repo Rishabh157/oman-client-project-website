@@ -37,163 +37,64 @@
 <body>
 
   <div class="container-fluid">
-
-    <a href="https://wa.me/7869270155" target="_blank" class="whastapp-fixed-img">
-      <img src="./images/whatsapp-icon.png" alt="whastapp-logo">
+    <!-- fixed whatsapp icon tab start -->
+    <a href="https://wa.me/+97459922823" target="_blank" class="whastapp-fixed-img">
+      <img src="./images/common/whatsapp-icon.png" alt="whastapp-logo">
     </a>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <!-- fixed whatsapp icon tab end -->
 
     <!-- top navbar start -->
     <nav class="d-flex justify-content-between align-items-center p-2">
-
       <div class="nav-logo-sec d-flex align-items-center">
-        <img src="./images/Pad-Top-02.svg" alt="logo-image" class="pe-3 img-fluid" height="70px">
+        <img src="./images/common/Pad-Top-02.svg" alt="logo-image" class="pe-3 img-fluid" height="70px">
         <a href="#">
           <p>Sanabal Al Shamal</p>
           <p>Trading Cont . & Services</p>
         </a>
       </div>
-
-      <div class="navigation">
-        <ul class="d-flex list-unstyled mb-0">
-          <li><a class="pe-2 active" href="./index.html">Home </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./about.html">About Us </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./services.html">Our Services </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./gallary.html">Projects </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./contact.html">Contact Us </a></li>
-        </ul>
-      </div>
-
-
-
-
+      <input type="checkbox" id="click">
+      <label class="menu-btn" for="click">
+        <img id="menu-toggle" src="./images/menu.svg" height="38px" alt="menu-img">
+      </label>
+      <ul class="list-unstyled mb-0">
+        <li><a class="pe-2 active" href="./index.html">Home </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./about.html">About Us </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./services.html">Our Services </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./gallary.html">Projects </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./contact.html">Contact Us </a></li>
+      </ul>
     </nav>
     <!-- top navbar end -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="row main-header p-2">
-      <div class="col-6 ps-5">
-        <nav class="nav-parent d-flex align-items-center">
-          <img src="./images/Pad-Top-02.svg" alt="logo-image" class="pe-4" height="70px">
-          <a href="#">
-            <p>Sanabal Al Shamal</p>
-            <p>Trading Cont . & Services</p>
-          </a>
-      </div>
-
-      <div class="col-6 d-flex justify-content-center align-items-center">
-
-        <div class="navigation">
-          <ul class="d-flex list-unstyled mb-0">
-            <li><a href="./index.html">Home </a> <span>|</span> </li>
-            <li><a href="./about.html">About Us </a> <span>|</span> </li>
-            <li><a href="./services.html">Our Services </a> <span>|</span> </li>
-            <li><a href="./gallary.html">Gallery </a> <span>|</span> </li>
-            <li><a href="#">Contact Us </a> <span>|</span> </li>
-          </ul>
-        </div>
-
-      </div>
-    </div> -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- home header start  -->
+    <!-- Home query form start  -->
     <div class="backHeader text-center">
-      <!-- <span class="display-6 text-light">
-        Integrated Real Estate Solutions
-      </span> -->
       <div class="formClass">
-
         <div class="">
-          <!-- <input class="form-control" type="text" placeholder="Price Range" aria-label=".form-control-lg example"> -->
           <label for="location-list">
-            <input class="form-control" list="location-cities-list" placeholder="Location" id="location-list">
-            <datalist id="location-cities-list">
+            <input class="form-control" list="location-cities-list" placeholder="Name*" id="location-list">
+            <!-- <datalist id="location-cities-list">
               <option value="Muscat"></option>
-              <option value="San Francisco">
-              <option value="New York">
-              <option value="Seattle">
-              <option value="Los Angeles">
-              <option value="Chicago">
-            </datalist>
+            </datalist> -->
         </div>
 
         <div class="">
-          <!-- <input class="form-control" type="text" placeholder="Price Range" aria-label=".form-control-lg example"> -->
           <label for="ok-input-list">
-            <input class="form-control" list="price-list" placeholder="Price" id="ok-input-list">
-            <datalist id="price-list">
-              <option value="10 - 20"></option>
-              <option value="20 - 30"></option>
-              <option value="30 - 40"></option>
-              <option value="40 - 50"></option>
-              <option value="50 - 60"></option>
-              <option value="60 - 70"></option>
-              <option value="70 - 80"></option>
-              <option value="80 - 90"></option>
-              <option value="90 - 100"></option>
-            </datalist>
+            <input class="form-control" list="price-list" placeholder="Number*" id="ok-input-list">
+            <!-- <datalist id="price-list">
+              <option value="9009648224"></option>
+              <option value="6260116100"></option>
+            </datalist> -->
         </div>
 
         <div class="">
-          <input class="form-control" type="text" placeholder="Bad & Baths" aria-label=".form-control-lg example">
+          <input class="form-control" type="text" placeholder="Email*" aria-label=".form-control-lg example">
         </div>
         <div class="">
-          <button class="btn px-3">Search Property</button>
+          <button class="btn px-3">SUBMIT</button>
         </div>
       </div>
     </div>
-    <!-- home header end -->
-
+    <!-- Home query form end -->
 
     <!-- main container start -->
     <div class="container main-container">
@@ -202,13 +103,13 @@
           <div class="row g-2">
 
             <div class="col">
-              <img src="./images/galle-1.png" class="img-thumbnail mb-2" alt="gallary-img">
-              <img src="./images/galle-3.png" class="img-thumbnail" alt="gallary-img">
+              <img src="./images/common/galle-1.png" class="img-thumbnail mb-2" alt="gallary-img">
+              <img src="./images/common/galle-3.png" class="img-thumbnail" alt="gallary-img">
             </div>
             <!-- <img src="./images/box_center.png" class="box-center-image" alt="box-center-image"> -->
             <div class="col">
-              <img src="./images/galle-2.png" class="img-thumbnail mb-2" alt="gallary-img">
-              <img src="./images/galle-4.png" class="img-thumbnail" alt="gallary-img">
+              <img src="./images/common/galle-2.png" class="img-thumbnail mb-2" alt="gallary-img">
+              <img src="./images/common/galle-4.png" class="img-thumbnail" alt="gallary-img">
             </div>
           </div>
 
@@ -226,11 +127,9 @@
               the well diversified density group of companies, having interest in Transportation, swing and Manpower.
               Located in central Doha, the group is poised for major expansion in the coming years.
             </p>
-            <button class="exploreBtn mt-3">
-              <a target="_blank" href="./gallary.html" class="text-center text-decoration-none text-black">
-                Explore About Us&#x21;
-              </a>
-            </button>
+            <a target="_blank" href="./about.html" class="mt-3 text-center text-decoration-none text-black">
+              <button class="exploreBtn"> Explore About Us&#x21;</button>
+            </a>
           </div>
         </div>
 
@@ -250,42 +149,43 @@
         <!-- services boxes start -->
         <div class="row mt-5">
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/Man-Power-Supply-01.png" class="icon-logo" alt="box-logo">
-                <p>Monopoly Supply</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/Man-Power-Supply-01.png" class="icon-logo" alt="box-logo">
+                  <p>Manpower Supply & project Support</p>
+                  <span>
+                    We have full-fledged setup to serve and support your projects through well
+                    experience qualified team of staffs, as per your requirement.
+                  </span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/Real-Estate-01.png" class="icon-logo" alt="box-logo">
-                <p>Real Estate</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/Real-Estate-01.png" class="icon-logo" alt="box-logo">
+                  <p>Real Estate</p>
+                  <span>We provide storage services, Renting lands & apartments</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/Project-Support-01.png" class="icon-logo" alt="box-logo">
-                <p>Project Support</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/Project-Support-01.png" class="icon-logo" alt="box-logo">
+                  <p>General Contracting & Maintainance</p>
+                  <span>We are a civil and construction company that has built a strong reputation
+                    for delivering a quality service, on time, and at a competitive price</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <!-- services boxes start -->
@@ -293,50 +193,48 @@
         <!-- services boxes start -->
         <div class="row mt-4">
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/General-Contracting-Maintenance-01-01.png" class="icon-logo" alt="box-logo">
-                <p>General Contracting & Maintenance</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/General-Contracting-Maintenance-01-01.png" class="icon-logo" alt="box-logo">
+                  <p>Interior Design & Planning</p>
+                  <span>We help thecustomer to determine their requirements and maximum utilization of space,
+                    provided with aesthetic beauty of proportions combinations.</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/Structural-Buildings-01.png" class="icon-logo" alt="box-logo">
-                <p>Structural Buildings</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/Structural-Buildings-01.png" class="icon-logo" alt="box-logo">
+                  <p>Decorative Gypsum Ceiling</p>
+                  <span>We are specialized for Decorative Gypsum works and experienced
+                    team of engineers, carvers.</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-4">
-            <div class="box-1">
-              <div class="text-center">
-                <img src="./images/Portable-Cabins-01.png" class="icon-logo" alt="box-logo">
-                <p>Portable - Cabin</p>
-                <span>
-                  You can dream, create, design, and build the most
-                  wonderfull place in the world. But it requires people.
-                </span>
+            <a class="text-decoration-none" href="./services.html">
+              <div class="box-1">
+                <div class="text-center">
+                  <img src="./images/common/Portable-Cabins-01.png" class="icon-logo" alt="box-logo">
+                  <p>Real Estate Division</p>
+                  <span>We provide premium commercial and Residential property Management,
+                    Facility and Commercial Brokerage Services.</span>
+                </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
         <div class="text-center mt-5">
-          <button class="exploreBtn ">
-            <a target="_blank" href="./services.html" class="text-center text-decoration-none text-black">
-              Explore All Services&#x21;
-            </a>
-          </button>
+          <a target="_blank" href="./services.html" class="text-center text-decoration-none text-black">
+            <button class="exploreBtn">Explore All Services&#x21;</button>
+          </a>
         </div>
       </div>
     </div>
@@ -354,25 +252,25 @@
           <div class="row">
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/proj-1.png" alt="project-img">
+                <img src="./images/common/proj-1.png" alt="project-img">
                 <p>Sinohydro CP1 Project</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/proj-2.png" alt="project-img">
+                <img src="./images/common/proj-2.png" alt="project-img">
                 <p>Sinohydro Barwa Al Baraha Project</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/proj-3.png" alt="project-img">
+                <img src="./images/common/proj-3.png" alt="project-img">
                 <p>Badminton court shed building for Green Stadium</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/proj-4.png" alt="project-img">
+                <img src="./images/common/proj-4.png" alt="project-img">
                 <p>HBK Site Office at Rayyan</p>
               </div>
             </div>
@@ -382,41 +280,45 @@
     </div>
     <!-- Projects end -->
 
-
     <!-- footer start -->
     <div class="footer">
-
       <div class="row align-items-center">
         <div class="col-6 ps-5">
           <nav class="nav-parent nav-logo-sec d-flex align-items-center">
-            <img src="./images/footer-logo.svg" alt="logo-image" class="pe-4" height="70px">
+            <img src="./images/common/footer-logo.svg" alt="logo-image" class="pe-4" height="70px">
             <a href="#">
               <p class="text-light">Sanabal Al Shamal</p>
               <p class="text-light">Trading Cont . & Services</p>
             </a>
         </div>
-
         <div class="col-6 d-flex justify-content-end">
-          <p class="pe-5 text-light">Call Us: (009) 01361246741</p>
+          <p class="pe-5 text-light fw-bold callUs">Call Us: (974) 5992-2823</p>
           <div class="social-div">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100081200933484">
-              <img src="./images/facebook.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/facebook.svg" alt="social-logo">
             </a>
           </div>
           <div class="social-div">
-            <a target="_blank" href="https://www.instagram.com/rishabhgour0007/">
-              <img src="./images/linkedin.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/linkedin.svg" alt="social-logo">
             </a>
           </div>
           <div class="social-div">
-            <a target="_blank" href="https://twitter.com/Rishabhgour157">
-              <img src="./images/twitter.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/twitter.svg" alt="social-logo">
             </a>
           </div>
         </div>
-
       </div>
-
+      <div class="row pt-5">
+        <div class="text-center footer-terms">
+          <h6>Design and Developed by :
+            <a target="_blank" href="http://aricaglobalgraphics.com/">aricaglobal</a>
+            &
+            <a target="_blank" href="https://www.techstudio9.com/">techstudio9</a>
+          </h6>
+        </div>
+      </div>
     </div>
     <!-- footer end -->
 
@@ -429,7 +331,6 @@
     crossorigin="anonymous"></script>
 
   <script src="./js/jquery-3.6.1.slim.min.js"></script>
-
 </body>
 
 </html>

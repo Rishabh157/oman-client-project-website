@@ -37,32 +37,34 @@
 <body>
 
   <div class="container-fluid">
+
     <!-- top navbar start -->
     <nav class="d-flex justify-content-between align-items-center p-2">
-
       <div class="nav-logo-sec d-flex align-items-center">
-        <img src="./images/Pad-Top-02.svg" alt="logo-image" class="pe-3 img-fluid" height="70px">
+        <img src="./images/common/Pad-Top-02.svg" alt="logo-image" class="pe-3 img-fluid" height="70px">
         <a href="#">
           <p>Sanabal Al Shamal</p>
           <p>Trading Cont . & Services</p>
         </a>
       </div>
-
-      <div class="navigation">
-        <ul class="d-flex list-unstyled mb-0">
-          <li><a class="pe-2 active" href="./index.html">Home </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./about.html">About Us </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./services.html">Our Services </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./gallary.html">Projects </a> <span>|</span> </li>
-          <li><a class="pe-2" href="./contact.html">Contact Us </a></li>
-        </ul>
-      </div>
+      <input type="checkbox" id="click">
+      <label class="menu-btn" for="click">
+        <img id="menu-toggle" src="./images/menu.svg" height="38px" alt="menu-img">
+      </label>
+      <ul class="list-unstyled mb-0">
+        <li><a class="pe-2 active" href="./index.html">Home </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./about.html">About Us </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./services.html">Our Services </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./gallary.html">Projects </a> <span>|</span> </li>
+        <li><a class="pe-2" href="./contact.html">Contact Us </a></li>
+      </ul>
     </nav>
     <!-- top navbar end -->
 
     <!-- About vector-section start  -->
     <div class="top-vector-team-about mb-5">
-      <img src="./images/vector-team.png" alt="vector-team-img">
+      <p class="display-5">About Us</p>
+      <img src="./images/about/vector-team.png" alt="vector-team-img">
     </div>
     <!-- About vector-section end  -->
 
@@ -72,7 +74,7 @@
       <div class="row">
         <div class="col-6">
           <div class="about-box">
-            <img src="./images/aboutus-1.jpg" alt="about-img">
+            <img src="./images/about/aboutus-1.jpg" class="img-thumbnail" alt="about-img">
           </div>
         </div>
         <div class="col-6">
@@ -106,7 +108,7 @@
         </div>
         <div class="col-6">
           <div class="about-box">
-            <img src="./images/aboutus-2.jpg" alt="about-img">
+            <img src="./images/about/aboutus-2.jpg" class="img-thumbnail" alt="about-img">
           </div>
         </div>
       </div>
@@ -120,7 +122,7 @@
         <div class="row p-5">
           <div class="col-4">
             <div class="about-boxes-content">
-              <img src="./images/Man-Power-Supply-01.png" class="rounded mx-auto d-block" alt="icon-img">
+              <img src="./images/about/our-vision-2.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Vision</p>
               <span class="text-center">SANBAL aims to be the leading quality Construction Company in
                 Qatar. With a focus on Innovation, customer satisfaction, staff welfare and quality. </span>
@@ -128,7 +130,7 @@
           </div>
           <div class="col-4">
             <div class="about-boxes-content">
-              <img src="./images/Man-Power-Supply-01.png" class="rounded mx-auto d-block" alt="icon-img">
+              <img src="./images/about/our-mission-1.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Mission</p>
               <span>With a profession that encompasses multiple disciplines, we would like to ensure
                 functionality of the built environment by integrating people, places, process and
@@ -137,7 +139,7 @@
           </div>
           <div class="col-4">
             <div class="about-boxes-content">
-              <img src="./images/Man-Power-Supply-01.png" class="rounded mx-auto d-block" alt="icon-img">
+              <img src="./images/about/our-values-3.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Values</p>
               <span>We embrace and foster leadership in every aspect of our business, from innovation and learning, to
                 management and customer satisfaction, to employee and skills development. An organization's ability to
@@ -148,7 +150,6 @@
         </div>
       </div>
     </div>
-
     <!-- About image container end  -->
 
     <!-- Projects start  -->
@@ -161,25 +162,25 @@
           <div class="row">
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/project1-about-1.jpg" alt="project-img">
+                <img src="./images/about/project1-about-1.jpg" alt="project-img">
                 <p>Sinohydro CP1 Project</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/project2-about-2.jpg" alt="project-img">
+                <img src="./images/about/project2-about-2.jpg" alt="project-img">
                 <p>Sinohydro Barwa Al Baraha Project</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/project3-about-3.jpg" alt="project-img">
+                <img src="./images/about/project3-about-3.jpg" alt="project-img">
                 <p>Badminton court shed building for Green Stadium</p>
               </div>
             </div>
             <div class="col-3">
               <div class="project-img-box">
-                <img src="./images/project4-about-4.jpg" alt="project-img">
+                <img src="./images/about/project4-about-4.jpg" alt="project-img">
                 <p>HBK Site Office at Rayyan</p>
               </div>
             </div>
@@ -191,38 +192,43 @@
 
     <!-- footer start -->
     <div class="footer">
-
       <div class="row align-items-center">
         <div class="col-6 ps-5">
           <nav class="nav-parent nav-logo-sec d-flex align-items-center">
-            <img src="./images/footer-logo.svg" alt="logo-image" class="pe-4" height="70px">
+            <img src="./images/common/footer-logo.svg" alt="logo-image" class="pe-4" height="70px">
             <a href="#">
               <p class="text-light">Sanabal Al Shamal</p>
               <p class="text-light">Trading Cont . & Services</p>
             </a>
         </div>
-
         <div class="col-6 d-flex justify-content-end">
-          <p class="pe-5 text-light">Call Us: (009) 01361246741</p>
+          <p class="pe-5 text-light fw-bold callUs">Call Us: (974) 5992-2823</p>
           <div class="social-div">
-            <a target="_blank" href="https://www.facebook.com/profile.php?id=100081200933484">
-              <img src="./images/facebook.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/facebook.svg" alt="social-logo">
             </a>
           </div>
           <div class="social-div">
-            <a target="_blank" href="https://www.instagram.com/rishabhgour0007/">
-              <img src="./images/linkedin.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/linkedin.svg" alt="social-logo">
             </a>
           </div>
           <div class="social-div">
-            <a target="_blank" href="https://twitter.com/Rishabhgour157">
-              <img src="./images/twitter.svg" alt="social-logo">
+            <a href="#">
+              <img src="./images/common/twitter.svg" alt="social-logo">
             </a>
           </div>
         </div>
-
       </div>
-
+      <div class="row pt-5">
+        <div class="text-center footer-terms">
+          <h6>Design and Developed by :
+            <a target="_blank" href="http://aricaglobalgraphics.com/">aricaglobal</a>
+            &
+            <a target="_blank" href="https://www.techstudio9.com/">techstudio9</a>
+          </h6>
+        </div>
+      </div>
     </div>
     <!-- footer end -->
 

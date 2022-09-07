@@ -25,9 +25,12 @@
   opacity: 1;
 }
 
+#click {
+  display: none;
+}
 
 
-
+/*** Top Navigation Style ***/
 
 .nav-logo-sec a p {
   margin-bottom: 0px;
@@ -41,11 +44,11 @@
   color: black;
 }
 
+nav ul {
+  display: flex;
+}
 
-
-
-
-.navigation ul li a {
+nav ul li a {
   text-decoration: none;
   color: black;
   font-size: 17px;
@@ -53,73 +56,96 @@
   font-family: 'Merriweather', serif;
 }
 
-.navigation ul li {
+nav ul li {
   padding-right: 24px;
 }
 
-/* .active {
-  color: cyan;
-  padding: 10px 21px;
-  background-color: white;
-  border-radius: 5px;
-} */
-
-
-
-
-@media only screen and (max-width: 1038px) {
-
-  .navigation {
-    position: fixed;
-    top: 0px;
-    height: 100vh;
-    right: 0px;
-    width: 50%;
-    background-color: black;
-    opacity: 0.6;
-  }
-
-
-  .navigation ul {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 0px;
-    top: 100px;
-  }
-
-  .navigation ul li {
-    padding: 15px 200px 15px 0px;
-    color: black;
-  }
-
-  .navigation ul li a {
-    color: cyan;
-    transition: all 450ms ease;
-  }
-
-  .navigation ul li a:active,
-  .navigation ul li a:hover {
-    color: cyan;
-    padding: 10px 21px;
-    background-color: white;
-    border-radius: 5px;
-  }
-
-
-  .navigation ul li span {
-    display: none;
-  }
-
+.menu-btn {
+  display: none;
 }
 
 
+/* some fixed bars  */
+@media only screen and (max-width: 1020px) {
+  .nav-logo-sec img {
+    height: 70px;
+  }
+
+  .nav-logo-sec a p {
+    font-size: 16px;
+  }
+
+  nav ul li a {
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+  }
+}
+
+/* some fixed bars  */
+
+
+/* Tablet Screen  */
+@media only screen and (max-width: 991px) {
+
+  .nav-logo-sec {
+    padding-left: 32px;
+  }
+
+  .menu-btn {
+    display: block;
+    padding-right: 70px;
+  }
+
+  nav ul {
+    display: block;
+    position: absolute;
+    top: 86px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, #5E5C5C, #9DC5C3);
+    height: 100vh;
+    width: 26%;
+    right: -100%;
+    border-top-left-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  #click:checked~ul {
+    right: 0%;
+  }
+
+  #click:checked~label img ::after {
+    content: url("../images/x.svg");
+    height: 38px;
+  }
+
+  nav ul li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 28px 0px;
+  }
+
+  nav ul li span {
+    display: none;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+}
+
+/* Tablet Screen  */
+
+.callUs {
+  font-family: 'Roboto', sans-serif;
+}
 
 
 /* homeheader  */
 
 .backHeader {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/common/header.jpg");
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
@@ -153,6 +179,7 @@
   min-height: 60px;
   background-color: #bb0a0a;
   color: #fff;
+  width: 124%;
 }
 
 /* main-container  */
@@ -225,7 +252,7 @@
 /* global image container */
 
 .services-container {
-  background-image: url("../images/bg-map-1.png");
+  background-image: url("../images/common/bg-map-1.png");
   background-size: contain;
   padding: 80px 0px;
 }
@@ -244,6 +271,13 @@
   min-width: 102%;
   border: 1px solid black;
   opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.box-1:hover {
+  background-color: #dddddd;
+  cursor: pointer;
+  transform: translateY(-2px);
 }
 
 .box-1 .icon-logo {
@@ -284,7 +318,7 @@
 /* Projects  */
 .projects-container {
   padding: 90px 0px 50px 0px;
-  background-image: url("../images/proje-bg.png");
+  background-image: url("../images/common/proje-bg.png");
   background-size: contain;
   margin-top: 26px;
   opacity: 1;
@@ -316,7 +350,7 @@
 
 .footer {
   background-color: #001E4C;
-  height: 144px;
+  height: 196px;
   padding: 50px 50px 0px 50px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -343,9 +377,23 @@
   height: 25px;
 }
 
+.footer-terms h6 {
+  font-family: 'Poppins', sans-serif;
+  color: #9d9d9d;
+}
+
+.footer-terms h6 a {
+  color: #9d9d9d;
+  text-decoration: none;
+}
+
+.footer-terms h6 a:hover {
+  color: #fff;
+}
+
 
 /***********************************/
-/******   Gallary Page Style  ******/
+/******   Project Page Style  ******/
 /***********************************/
 
 .gallary-container {
@@ -376,10 +424,21 @@
 
 
 .box-galle img:hover {
-  /* transform: scale(1.1); */
   transform: translateY(-10px);
 }
 
+.project-list-sec {
+  list-style-type: square;
+  padding-top: 20px;
+}
+
+
+.project-list-sec li {
+  padding-bottom: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+}
 
 /***********************************/
 /******   About Us Page Style ******/
@@ -393,7 +452,6 @@
   background-size: contain;
   background-position-x: 331px;
   background-color: #001E4C;
-  /* justify-content: end; */
   align-items: center;
 }
 
@@ -412,7 +470,6 @@
   background-size: contain;
   background-position-x: 331px;
   background-color: #001E4C;
-  /* justify-content: end; */
   align-items: center;
 }
 
@@ -443,7 +500,7 @@
 }
 
 .about-img-box {
-  background-image: url("../images/about-bg.png");
+  background-image: url("../images/about/about-bg.png");
   width: 100%;
   background-color: #132544;
   background-size: contain;
@@ -486,7 +543,6 @@
 /******   Services Page Style ******/
 /***********************************/
 
-
 .top-vector-team-service {
   display: flex;
   background-image: url("../images/about-vector-1.png");
@@ -495,7 +551,6 @@
   background-size: contain;
   background-position-x: 331px;
   background-color: #001E4C;
-  /* justify-content: end; */
   align-items: center;
 }
 
@@ -513,6 +568,15 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.service-content-bg p {
+  font-family: 'Roboto', sans-serif;
+}
+
+.service-content-bg span {
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
+}
+
 .service-box img {
   height: 250px;
   width: 85%;
@@ -522,7 +586,7 @@
   font-size: 32px;
   color: #051f49;
   font-weight: 700;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .service-content span {
@@ -530,6 +594,7 @@
   color: #000000;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
 }
 
 .highlight {
@@ -570,7 +635,7 @@
 
 .box-contact-ui {
   background-color: #05214E;
-  background-image: url("../images/contact-bg-img.png");
+  background-image: url("../images/contact/contact-bg-img.png");
   background-size: contain;
   height: 140px;
   width: 100%;
@@ -599,6 +664,14 @@
 
 .box-contact-in {
   padding: 0px 30px;
+}
+
+/* .box-contact-ui p {
+  font-family: 'Poppins', sans-serif;
+} */
+
+.box-contact-ui span {
+  font-family: 'Poppins', sans-serif;
 }
 
 .contact-heading {
