@@ -37,7 +37,6 @@
 <body>
 
   <div class="container-fluid">
-
     <!-- top navbar start -->
     <nav class="d-flex justify-content-between align-items-center p-2">
       <div class="nav-logo-sec d-flex align-items-center">
@@ -47,9 +46,9 @@
           <p>Trading Cont . & Services</p>
         </a>
       </div>
-      <input type="checkbox" id="click">
+      <input type="checkbox" class="d-none" id="click">
       <label class="menu-btn" for="click">
-        <img id="menu-toggle" src="./images/menu.svg" height="38px" alt="menu-img">
+        <img id="menu-toggle" src="./images/menu.svg" height="30px" alt="menu-img">
       </label>
       <ul class="list-unstyled mb-0">
         <li><a class="pe-2 active" href="./index.html">Home </a> <span>|</span> </li>
@@ -62,9 +61,13 @@
     <!-- top navbar end -->
 
     <!-- About vector-section start  -->
-    <div class="top-vector-team-about mb-5">
-      <p class="display-5">About Us</p>
-      <img src="./images/about/vector-team.png" alt="vector-team-img">
+    <div class="row top-vector-team-about mb-5">
+      <div class="col-lg-6 col-md-6 d-flex justify-content-center align-items-center">
+        <span class="display-5">About Us</span>
+      </div>
+      <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-end vector-cen">
+        <img src="./images/about/vector-team.png" alt="vector-team-img">
+      </div>
     </div>
     <!-- About vector-section end  -->
 
@@ -72,12 +75,14 @@
     <div class="container about-container my-5">
 
       <div class="row">
-        <div class="col-6">
+
+        <div class="col-lg-6 col-md-6">
           <div class="about-box">
             <img src="./images/about/aboutus-1.jpg" class="img-thumbnail" alt="about-img">
           </div>
         </div>
-        <div class="col-6">
+
+        <div class="col-lg-6 col-md-6">
           <div class="about-box-content p-5">
             <p>Who We Are?</p>
             <span>
@@ -92,9 +97,11 @@
             </span>
           </div>
         </div>
+
       </div>
+      <div class="about-border"></div>
       <div class="row mt-5">
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6">
           <div class="about-box-content p-5">
             <p>Company Policy</p>
             <span>
@@ -106,7 +113,7 @@
             </span>
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-lg-6 col-md-6">
           <div class="about-box">
             <img src="./images/about/aboutus-2.jpg" class="img-thumbnail" alt="about-img">
           </div>
@@ -119,8 +126,10 @@
     <!-- About image container start  -->
     <div class="about-img-box">
       <div class="container">
+
         <div class="row p-5">
-          <div class="col-4">
+
+          <div class="col-lg-4 col-md-6">
             <div class="about-boxes-content">
               <img src="./images/about/our-vision-2.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Vision</p>
@@ -128,7 +137,8 @@
                 Qatar. With a focus on Innovation, customer satisfaction, staff welfare and quality. </span>
             </div>
           </div>
-          <div class="col-4">
+
+          <div class="col-lg-4 col-md-6">
             <div class="about-boxes-content">
               <img src="./images/about/our-mission-1.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Mission</p>
@@ -137,7 +147,8 @@
                 technology. Tie up with global giants. </span>
             </div>
           </div>
-          <div class="col-4">
+
+          <div class="col-lg-4 col-md-12">
             <div class="about-boxes-content">
               <img src="./images/about/our-values-3.png" class="rounded mx-auto d-block" alt="icon-img">
               <p>Our Values</p>
@@ -147,7 +158,9 @@
                 and skills development. </span>
             </div>
           </div>
+
         </div>
+
       </div>
     </div>
     <!-- About image container end  -->
@@ -160,25 +173,25 @@
             Our Projects</span>
           </p>
           <div class="row">
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
               <div class="project-img-box">
                 <img src="./images/about/project1-about-1.jpg" alt="project-img">
                 <p>Sinohydro CP1 Project</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
               <div class="project-img-box">
                 <img src="./images/about/project2-about-2.jpg" alt="project-img">
                 <p>Sinohydro Barwa Al Baraha Project</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
               <div class="project-img-box">
                 <img src="./images/about/project3-about-3.jpg" alt="project-img">
                 <p>Badminton court shed building for Green Stadium</p>
               </div>
             </div>
-            <div class="col-3">
+            <div class="col-lg-3 col-md-6">
               <div class="project-img-box">
                 <img src="./images/about/project4-about-4.jpg" alt="project-img">
                 <p>HBK Site Office at Rayyan</p>
@@ -193,15 +206,16 @@
     <!-- footer start -->
     <div class="footer">
       <div class="row align-items-center">
-        <div class="col-6 ps-5">
+        <div class="col-lg-6 col-md-6 col-sm-6 ps-5">
           <nav class="nav-parent nav-logo-sec d-flex align-items-center">
             <img src="./images/common/footer-logo.svg" alt="logo-image" class="pe-4" height="70px">
             <a href="#">
               <p class="text-light">Sanabal Al Shamal</p>
               <p class="text-light">Trading Cont . & Services</p>
             </a>
+          </nav>
         </div>
-        <div class="col-6 d-flex justify-content-end">
+        <div class="col-lg-6 col-md-6 col-sm-6 social-footer">
           <p class="pe-5 text-light fw-bold callUs">Call Us: (974) 5992-2823</p>
           <div class="social-div">
             <a href="#">

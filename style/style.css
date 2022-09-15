@@ -65,12 +65,17 @@ nav ul li {
 }
 
 @media only screen and (max-width: 552px) {
-  .nav-logo-sec img {
-    height: 59px;
-  }
 
   .nav-logo-sec a p {
     font-size: 15px;
+  }
+
+  nav ul {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+    top: 60px;
   }
 }
 
@@ -101,7 +106,7 @@ nav ul li {
     display: none;
     position: fixed;
     height: 100vh;
-    top: 75px;
+    top: 112px;
     right: 0px;
   }
 
@@ -118,62 +123,15 @@ nav ul li {
   nav ul li span {
     display: none;
   }
-}
 
-
-
-
-/* Tablet Screen  */
-/* @media only screen and (max-width: 992px) {
-
-  .nav-logo-sec {
-    padding-left: 32px;
-  }
-
-  .menu-btn {
-    display: block;
-    padding-right: 70px;
-  }
-
-  nav ul {
-    display: block;
-    position: absolute;
-    top: 86px;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #5E5C5C, #9DC5C3);
-    height: 100vh;
-    width: 26%;
-    right: -100%;
-    border-top-left-radius: 5px;
-    transition: all 0.3s ease;
-  }
-
-  #click:checked~ul {
-    right: 0%;
-  }
-
-  #click:checked~label img ::after {
-    content: url("../images/x.svg");
-    height: 38px;
-  }
-
-  nav ul li {
+  .contact-box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 28px 0px;
   }
 
-  nav ul li span {
-    display: none;
-  }
-
-  nav ul li a {
-    font-size: 18px;
-  }
-} */
-
-/* Tablet Screen  */
+}
 
 .callUs {
   font-family: 'Roboto', sans-serif;
@@ -188,6 +146,9 @@ nav ul li {
     text-align: center;
   }
 
+  .contact-heading {
+    text-align: center;
+  }
 }
 
 /* Form section from index-page   */
@@ -204,7 +165,6 @@ nav ul li {
   align-items: flex-end;
   margin-bottom: 100px;
 }
-
 
 .formClass {
   display: flex;
@@ -308,8 +268,6 @@ nav ul li {
   font-family: 'Poppins', sans-serif;
 }
 
-
-
 .box-1 {
   min-height: 64vh;
   background-color: #fff;
@@ -324,12 +282,6 @@ nav ul li {
 
 .col-lg-4 {
   margin-bottom: 20px;
-}
-
-@media only screen and (max-width:991px) {
-  .box-1 {
-    min-height: 64vh;
-  }
 }
 
 .box-1:hover {
@@ -401,7 +353,6 @@ nav ul li {
   text-align: center;
 }
 
-
 /***********************************/
 /******   Footer of all Pages ******/
 /***********************************/
@@ -440,12 +391,12 @@ nav ul li {
     border-radius: 50%;
     cursor: pointer;
   }
-}
 
-@media only screen and (max-width: 768px) {
-  .footer-terms h6 {
-    font-size: 12px;
+
+  .box-contact-ui {
+    min-width: 20%;
   }
+
 }
 
 .col-sm-12 {
@@ -506,7 +457,6 @@ nav ul li {
 /***********************************/
 
 .gallary-container {
-  /* height: 10000px; */
   background-color: #F4F5F6;
   margin-top: 20px;
 }
@@ -517,8 +467,6 @@ nav ul li {
   color: rgb(50, 32, 32);
   font-size: rgb(0, 0, 0)17px;
 }
-
-
 
 .box-galle {
   background-color: #fff;
@@ -554,39 +502,25 @@ nav ul li {
 /***********************************/
 
 .top-vector-team-about {
-  display: flex;
   background-image: url("../images/about-vector-1.png");
-  height: 300px;
-  width: 100%;
   background-size: contain;
-  background-position-x: 331px;
   background-color: #001E4C;
-  align-items: center;
+  min-height: 300px;
 }
 
 .top-vector-team-about img {
   height: 200px;
-  position: absolute;
-  right: 129px;
-  bottom: 216px;
+  padding-right: 120px;
 }
 
-.top-vector-team-about {
-  display: flex;
-  background-image: url("../images/about-vector-1.png");
-  height: 300px;
-  width: 100%;
-  background-size: contain;
-  background-position-x: 331px;
-  background-color: #001E4C;
-  align-items: center;
-}
-
-.top-vector-team-about p {
+.top-vector-team-about span {
   color: #fff;
-  padding-left: 90px;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+}
+
+.about-border {
+  display: none;
 }
 
 .about-box img {
@@ -613,16 +547,13 @@ nav ul li {
   width: 100%;
   background-color: #132544;
   background-size: contain;
-
 }
 
 .about-boxes-content {
   padding: 25px;
-  height: 366px;
+  min-height: 370px;
   background-color: #fff;
   border: 1px solid #000;
-  text-align: center;
-  text-align: justify;
 }
 
 .about-boxes-content img {
@@ -639,14 +570,11 @@ nav ul li {
 }
 
 .about-boxes-content span {
-  font-size: 13px;
+  font-size: 12px;
   color: #001e4c;
   font-weight: 400;
   font-family: 'Montserrat', sans-serif;
 }
-
-
-
 
 /***********************************/
 /******   Services Page Style ******/
@@ -661,6 +589,15 @@ nav ul li {
   background-position-x: 331px;
   background-color: #001E4C;
   align-items: center;
+}
+
+.service-content span {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 0.4px;
+  text-align: justify;
 }
 
 .top-vector-team-service img {
@@ -678,6 +615,10 @@ nav ul li {
 }
 
 .service-content-bg p {
+  font-size: 32px;
+  color: #051f49;
+  font-weight: 700;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -687,7 +628,7 @@ nav ul li {
 }
 
 .service-box img {
-  height: 250px;
+  height: 350px;
   width: 85%;
 }
 
@@ -695,15 +636,8 @@ nav ul li {
   font-size: 32px;
   color: #051f49;
   font-weight: 700;
+  text-align: justify;
   font-family: 'Roboto', sans-serif;
-}
-
-.service-content span {
-  font-size: 15px;
-  color: #000000;
-  font-weight: 400;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: 0.4px;
 }
 
 .highlight {
@@ -711,35 +645,15 @@ nav ul li {
 }
 
 
-
-
 /***********************************/
 /******   Contact Page Style ******/
 /***********************************/
-
-.top-vector-team-contact {
-  display: flex;
-  align-items: center;
-  background-image: url("../images/about-vector-1.png");
-  height: 300px;
-  width: 100%;
-  background-size: contain;
-  background-position-x: 331px;
-  background-color: #001E4C;
-}
-
-.top-vector-team-contact img {
-  height: 200px;
-  position: absolute;
-  right: 129px;
-  bottom: 212px;
-}
-
-.top-vector-team-contact p {
-  color: #fff;
-  padding-left: 90px;
+.contact-heading {
+  font-size: 22px;
+  color: #04204c;
   font-weight: 700;
   font-family: 'Poppins', sans-serif;
+  margin-bottom: 30px;
 }
 
 .box-contact-ui {
@@ -747,10 +661,11 @@ nav ul li {
   background-image: url("../images/contact/contact-bg-img.png");
   background-size: contain;
   height: 140px;
-  width: 100%;
+  min-width: 10%;
   padding: 0px 0px 0px 10px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .box-contact-ui img {
@@ -764,7 +679,6 @@ nav ul li {
   font-family: 'Poppins', sans-serif;
 }
 
-
 .box-contact-ui span {
   color: #fff;
   font-size: 18px;
@@ -775,18 +689,7 @@ nav ul li {
   padding: 0px 30px;
 }
 
-/* .box-contact-ui p {
-  font-family: 'Poppins', sans-serif;
-} */
-
 .box-contact-ui span {
-  font-family: 'Poppins', sans-serif;
-}
-
-.contact-heading {
-  font-size: 22px;
-  color: #04204c;
-  font-weight: 700;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -830,4 +733,79 @@ nav ul li {
 
 .messageBtn:hover {
   transform: translateY(-4px);
+}
+
+/***********************************/
+/****** ALL PAGES MEDIA QUERIES ****/
+/***********************************/
+@media only screen and (max-width:768px) {
+
+  .top-vector-team-about span {
+    display: none;
+  }
+
+  .vector-cen {
+    display: flex;
+    justify-content: center;
+  }
+
+  .vector-cen img {
+    padding-right: 50px;
+  }
+
+  .about-border {
+    border: 1px solid gray;
+    display: block;
+  }
+
+  .top-vector-team-about {
+    background-image: url("../images/about-vector-1.png");
+    background-size: contain;
+    background-color: #001E4C;
+    min-height: 200px;
+  }
+
+  .top-vector-team-about img {
+    height: 150px;
+  }
+
+  /* services css  */
+  .service-box img {
+    height: 350px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .service-content p {
+    font-size: 22px;
+  }
+
+  .service-content-bg p {
+    font-size: 28px;
+  }
+
+
+  .service-content span {
+    text-align: justify;
+  }
+
+  /* services css end */
+
+  /* Contact Page start*/
+
+  .contact-heading {
+    font-size: 19px;
+    margin-bottom: 40px;
+  }
+
+  /* footer css */
+  .footer-terms h6 {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width:991px) {
+  .box-1 {
+    min-height: 64vh;
+  }
 }
