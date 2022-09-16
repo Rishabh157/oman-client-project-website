@@ -64,93 +64,6 @@ nav ul li {
   display: none;
 }
 
-@media only screen and (max-width: 552px) {
-
-  .nav-logo-sec a p {
-    font-size: 15px;
-  }
-
-  nav ul {
-    display: none;
-    position: fixed;
-    height: 100vh;
-    right: 0px;
-    top: 60px;
-  }
-}
-
-/* some fixed bars  */
-
-@media only screen and (max-width:992px) {
-
-  #click {
-    display: block;
-  }
-
-  .menu-btn {
-    display: block;
-    padding-right: 50px;
-  }
-
-  #click:checked~ul {
-    display: block;
-  }
-
-  #click:checked~label img ::after {
-    content: url("../images/x.svg");
-    height: 38px;
-  }
-
-  nav ul {
-    background-color: #001E4C;
-    display: none;
-    position: fixed;
-    height: 100vh;
-    top: 112px;
-    right: 0px;
-  }
-
-  nav ul li {
-    padding-top: 40px;
-    padding-right: 50px;
-    padding-left: 55px;
-  }
-
-  nav ul li a {
-    color: #fff;
-  }
-
-  nav ul li span {
-    display: none;
-  }
-
-  .contact-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-}
-
-.callUs {
-  font-family: 'Roboto', sans-serif;
-}
-
-@media only screen and (max-width: 991px) {
-  .main-container {
-    padding: 30px 30px;
-  }
-
-  .main-container-content {
-    text-align: center;
-  }
-
-  .contact-heading {
-    text-align: center;
-  }
-}
-
 /* Form section from index-page   */
 
 .backHeader {
@@ -163,7 +76,7 @@ nav ul li {
   font-family: 'Merriweather', serif;
   display: flex;
   align-items: flex-end;
-  margin-bottom: 100px;
+  margin-bottom: 80px;
 }
 
 .formClass {
@@ -356,56 +269,13 @@ nav ul li {
 /***********************************/
 /******   Footer of all Pages ******/
 /***********************************/
-
-@media only screen and (max-width: 901px) {
-  .callUs {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .nav-parent img {
-    height: 50px;
-  }
-
-  .nav-parent a p {
-    font-size: 12px;
-  }
-
-  .social-footer {
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .social-footer .social-div {
-    margin-right: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: orange;
-    padding: 18px;
-    height: 20px;
-    width: 0%;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-
-  .box-contact-ui {
-    min-width: 20%;
-  }
-
-}
-
 .col-sm-12 {
   background-color: rgb(117, 117, 117);
 }
 
 .footer {
   background-color: #001E4C;
-  height: 196px;
+  height: auto;
   padding: 50px 50px 0px 50px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
@@ -738,7 +608,35 @@ nav ul li {
 /***********************************/
 /****** ALL PAGES MEDIA QUERIES ****/
 /***********************************/
+
+@media only screen and (max-width: 480px) {
+  .menu-btn {
+    padding-right: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 444px) {
+  .nav-logo-sec a p {
+    font-size: 13px;
+  }
+}
+
 @media only screen and (max-width:768px) {
+
+  .backHeader {
+    min-height: 53vh;
+    margin-bottom: -10px;
+  }
+
+  .formClass {
+    display: none;
+  }
+
+  .project-img-box img {
+    height: 350px;
+    border-radius: 3px;
+  }
 
   .top-vector-team-about span {
     display: none;
@@ -804,8 +702,175 @@ nav ul li {
   }
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width: 552px) {
+
+  .nav-logo-sec a p {
+    font-size: 15px;
+  }
+
+  nav ul {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    right: 0px;
+    top: 60px;
+  }
+}
+
+/* some fixed bars  */
+
+@media only screen and (max-width:992px) {
+
+  #click {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+    padding-right: 10px;
+  }
+
+  #click:checked~ul {
+    display: block;
+  }
+
+  #click:checked~label img ::after {
+    content: url("../images/x.svg");
+    height: 38px;
+  }
+
+  nav ul {
+    background-color: #001E4C;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    top: 112px;
+    right: 0px;
+  }
+
+  nav ul li {
+    padding-top: 40px;
+    padding-right: 50px;
+    padding-left: 55px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  nav ul li span {
+    display: none;
+  }
+
+  .contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
+
+.callUs {
+  font-family: 'Roboto', sans-serif;
+}
+
+@media only screen and (max-width: 991px) {
+  .main-container {
+    padding: 30px 30px;
+  }
+
+  .main-container-content {
+    text-align: center;
+  }
+
+  .contact-heading {
+    text-align: center;
+  }
+
   .box-1 {
     min-height: 64vh;
   }
+}
+
+@media only screen and (max-width: 576px) {
+  .backHeader {
+    min-height: 40vh;
+    margin-bottom: 20px;
+  }
+
+  .nav-parent img {
+    height: 50px;
+  }
+
+  .nav-parent a p {
+    font-size: 12px;
+  }
+
+  .social-footer {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .social-footer .social-div {
+    margin-right: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    padding: 18px;
+    height: 20px;
+    width: 0%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+
+  .box-contact-ui {
+    min-width: 20%;
+  }
+
+}
+
+
+
+@media only screen and (max-width: 901px) {
+  .callUs {
+    display: none;
+  }
+
+  .nav-parent a p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+
+  .backHeader {
+    background-size: 600px;
+    background-position-x: -48px;
+  }
+
+}
+
+@media only screen and (max-width: 444px) {
+
+  .backHeader {
+    background-size: 673px;
+    background-position-x: -103px;
+    margin-bottom: 0px;
+  }
+
+}
+
+
+@media only screen and (max-width: 430px) {
+
+  .backHeader {
+    background-size: 673px;
+    background-position-x: -103px;
+  }
+
 }
